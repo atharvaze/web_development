@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.border{ border: solid 1px; }
+</style>
+<script type="text/javascript">
+var count=0;
+function swap() 
+{
+	if (count==0) 
+	{
+		document.getElementById('menu').style.display= 'none';
+		count++;
+	}
+		else
+	{
+		document.getElementById('menu').style.display= 'block';
+		count=0;
+	}
+}
+</script>
+</head>
+<body>
+	<div class="border" style="width:30%">
+		<div style="float:left" onclick="swap()">MENU 1</div>
+		<div style="margin-left:100px">MENU 2</div>
+	</div>	
+	<div style="height: 100px; width:80px;" id="menu" class="border">
+		<div>Sub menu 1</div>
+		<div>Sub menu 2</div>
+	</div>
+
+
+</body>
+</html>
